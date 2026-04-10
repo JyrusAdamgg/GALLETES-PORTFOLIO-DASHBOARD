@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+    <style>
+        @media (max-width: 600px) {
+    .container {
+        flex-direction: column; 
+        align-items: center;    
+        text-align: center;
+        margin-top: 0 !important;   
+        margin-right: 0 !important; 
+    }
+
+    .logo {
+        width: 80% !important; 
+        max-width: 300px;
+        margin-top: 20px;
+    }
+
+    .paragraph {
+        margin-left: 0 !important;
+        margin-bottom: 20px;
+    }
+}
+        
+        
+        .logo{
+            width: 500px;
+            height: auto;
+            display: flex;
+            border: white;
+            transition: ;
+        }
+        
+       
+        .container{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 200px;
+            align-items: center;
+            margin-top: -200px;
+        }
+
+        body{
+            background-color: antiquewhite;
+            margin: 0;
+        }
+
+
+        .top{
+            gap:20px;
+            display: flex;
+            text-align: center;
+            color:white;
+            padding:10px 20px;
+            justify-content: center;
+            
+        }
+        .top a{
+             background-color: transparent;
+            font-family: "Oswald";
+            border: none;
+            cursor: pointer;
+            font-size: 25px;
+            transition: 0.2s;
+            margin-top: 30px;
+            color: whitesmoke;
+            text-decoration: none;
+            
+        }
+        .top a:hover{
+            color:brown;
+            transform: scale(1.1);
+        }
+
+        .space{
+            align-items: flex-start;
+           padding: 5px;
+           text-align: left;
+            margin: 0px;
+           margin-left: 100px;
+           
+        }
+
+        .portfolio{
+          
+           padding: 3px ;
+            margin: 0px;  
+            font-family: "Anton", sans-serif;
+            align-items: center;
+            font-size: 13vw;
+            text-align: center;
+            line-height: 3px;
+            overflow: hidden;
+            -webkit-text-stroke: 5px brown;
+            color: peachpuff;
+            cursor: default;
+            transition: 0.2s;
+        }
+        .portfolio:hover{
+            color:brown;
+            transform: scale(1);
+        }
+        .image{
+             background-image: url("until.png");
+           background-size: 100%;
+           background-repeat: no-repeat; 
+           transition: background-size 0.2s ease;
+           background-position: center;
+        }
+        .image:hover{
+            background-size: 120%;
+        }
+        .image:has(.top:hover){
+            background-size: 100%;
+        }
+        
+        .title{                                 /* -- TITLE - */
+            font-size: 150px;
+            font-family:"Oswald" ;
+            font-weight: bold;
+            margin: 5px;
+            transition: 0.2s;
+            cursor: default;
+            display: inline-block;
+            border: none;
+            color:gray;
+           
+        }
+
+        .title:hover{
+            color:brown;
+            transform: scale(1.1);
+        }
+        .paragraph span{
+            font-size: 30px;
+            font-family: "Oswald";
+            display: block;
+        }
+    </style>
+    <title>Student Potfolio</title>
+</head>
+<body> 
+<div class = "image"> 
+        <nav class = "top">
+                <a href = "#about">ABOUT ME</a>
+                <a href = "#quizzes">QUIZZES</a>
+                <a href = "#acts">ACTIVITIES</a>
+                
+                </nav>
+    <div class = "portfolio">       
+    <p>STUDENT</p> <p>  PORTFOLIO</p>
+    </div>
+</div>
+
+    <section id = "about">
+    <div class = "space">
+        <span class = "title" >ABOUT ME</span> 
+            <div class ="container" > <div class = "paragraph">
+                   <span>Name:<b>Jyrus Adam Galletes</b></span>              
+                    <span>Age: <b>18</b></span>           
+                    <span>Student Number: <b>251100312</b></span>           
+                    <span>Course and Section:<b>Bachelor of Science in Computer Science</b></span>  </div> 
+                    <p class = "paragraph">Hello there, it's nice to meet you. I am Adam, my friends call me Jy or Soma. Currently I am a working student, an online video editor. Let me whos you what I can do:</p>                             
+                     <img class = "logo" src = me.png>  </div>  <hr>
+                     
+            <h2>Skills</h2>
+            <ul>
+                <li>Guitar playing</li>
+                <li>Video editing</li>
+                <li>Singing & Dancing</li>
+                <li>Gaming</li>
+            </ul>
+    </div>                
+
+        <section id = project>
+                <div>    
+                    <p>This project is about building a <b>STUDENT PORTOLIO</b></p>
+                </div>
+        </section>   
+        
+        <section id = quizzes>
+                <div class = "space">
+                    <span class = "title">QUIZZES</span>
+                    <span>Quiz 1</span>
+                    <span>Quiz 2</span>
+                </div>
+        </section>
+
+        <section id = acts>
+                <div class = "space">
+                    <span class = "title">ACTIVITIES</span>
+                    <span>Activity 1</span>
+                    <span>Activity 2</span>
+                </div>
+        </section>
+
+        <section id = exam>
+                <div class = "space">
+                    <span class = "title"
+                
+                
+                </div>
+        </section>
+                           
+             
+                        
+    
+
+       
+         
+                  
+    
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
